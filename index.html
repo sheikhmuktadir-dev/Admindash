@@ -4,10 +4,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- ✅ This is fine -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dash Enhanced</title>
 
-    <!-- Google Fonts (Optional) -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,8 +25,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <!-- ✅ FIXED: Use Vite-style relative path -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
   <body>
     <div class="layout">
@@ -34,7 +35,7 @@
       <main class="main-content" id="main-content"></main>
     </div>
 
-    <!-- SPA Entry -->
-    <script type="module" src="/assets/scripts/main.js"></script>
+    <!-- ✅ FIXED: Use relative path -->
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
