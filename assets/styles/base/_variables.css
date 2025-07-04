@@ -1,0 +1,124 @@
+/* -------------------------------
+   ROOT VARIABLES (THEME)
+-------------------------------- */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #17a2b8;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+
+    --border-radius: 0.5rem;
+    --transition: 0.3s ease;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Light Theme */
+:root[data-theme="light"] {
+    --sidebar-icon-color1: #000;
+    --sidebar-icon-color2: #000;
+
+    --sidebar-bg1: #ffffff;
+    --sidebar-bg2: #ffffff;
+    --navbar-bg1: #f6f6f6;
+    --navbar-bg2: #f6f6f6;
+    --background-color: #f6f6f6;
+    --text-color: #212529;
+    --muted-color: #6c757d;
+    --border-color: #dee2e6;
+    --color-ui: rgb(255, 45, 120);
+    --color-ux: rgb(76, 65, 139);
+    --color-code: rgb(4, 174, 198);
+    --chart-border: #e0e0e0;
+    --chart-text: #000;
+    --chart-tooltip-bg: #fff;
+    --chart-tooltip-text: #000;
+    --theme-design-border: rgba(126, 87, 194, 0.9);
+    --theme-design-bg: rgba(126, 87, 194, 0.3);
+
+    --theme-dev-border: rgba(0, 188, 212, 0.9);
+    --theme-dev-bg: rgba(0, 188, 212, 0.3);
+
+    --theme-marketing-border: rgba(233, 30, 99, 0.9);
+    --theme-marketing-bg: rgba(233, 30, 99, 0.3);
+
+    --theme-tooltip-bg: #f0f0f0;
+    --theme-tooltip-text: #000;
+
+    --theme-axis-x: #333;
+    --theme-axis-y: #666;
+    --theme-grid-color: rgba(0, 0, 0, 0.05);
+    --bar-color-ux: rgba(76, 65, 139, 0.9);
+    --bar-color-ui: rgba(255, 45, 120, 0.9);
+    --bar-color-code: rgba(4, 174, 198, 0.9);
+
+    --bar-axis-text: #111;
+    --bar-grid: rgba(0, 0, 0, 0.05);
+    --bar-tooltip-bg: #eee;
+    --bar-tooltip-text: #111;
+    --scatter-color-ux: rgba(76, 65, 139, 1);
+    --scatter-color-ui: rgba(255, 45, 120, 1);
+    --scatter-color-code: rgba(4, 174, 198, 1);
+
+    --scatter-axis-text: #111;
+    --scatter-grid: rgba(0, 0, 0, 0.05);
+    --scatter-tooltip-bg: #eee;
+    --scatter-tooltip-text: #111;
+}
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+    --sidebar-icon-color1: #fff;
+    --sidebar-icon-color1: #fff;
+    --sidebar-bg1: #202226;
+    --sidebar-bg2: #18191c;
+    --navbar-bg1: #202226;
+    --navbar-bg2: #18191c;
+    --background-color: #18191c;
+    --text-color: #f1f1f1;
+    --muted-color: #aaa;
+    --border-color: #333;
+    --color-ui: rgb(255, 45, 120);
+    --color-ux: #6256a9;
+    --color-code: rgb(4, 174, 198);
+    --chart-border: #18191c;
+    --chart-text: #c5c5c5;
+    --chart-tooltip-bg: #333;
+    --chart-tooltip-text: #fff;
+    --theme-design-border: rgba(126, 87, 194, 1);
+    --theme-design-bg: rgba(126, 87, 194, 0.3);
+
+    --theme-dev-border: rgba(0, 188, 212, 1);
+    --theme-dev-bg: rgba(0, 188, 212, 0.3);
+
+    --theme-marketing-border: rgba(233, 30, 99, 1);
+    --theme-marketing-bg: rgba(233, 30, 99, 0.3);
+
+    --theme-tooltip-bg: #6256a9;
+    --theme-tooltip-text: #fff;
+
+    --theme-axis-x: #ccc;
+    --theme-axis-y: #999;
+    --theme-grid-color: rgba(255, 255, 255, 0.05);
+    --bar-color-ux: #6256a9;
+    --bar-color-ui: rgba(255, 45, 120, 0.9);
+    --bar-color-code: rgba(4, 174, 198, 0.9);
+
+    --bar-axis-text: #ccc;
+    --bar-grid: rgba(255, 255, 255, 0.05);
+    --bar-tooltip-bg: #333;
+    --bar-tooltip-text: #fff;
+
+    --scatter-color-ux: #6256a9;
+    --scatter-color-ui: rgba(255, 45, 120, 1);
+    --scatter-color-code: rgba(4, 174, 198, 1);
+
+    --scatter-axis-text: #ccc;
+    --scatter-grid: rgba(255, 255, 255, 0.05);
+    --scatter-tooltip-bg: #333;
+    --scatter-tooltip-text: #fff;
+}

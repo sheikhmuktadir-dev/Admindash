@@ -1,0 +1,393 @@
+/* -------------------------------
+   RESET + BOX SIZING
+-------------------------------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------
+   HTML/BODY BASE STYLES
+-------------------------------- */
+canvas {
+    width: 100%;
+    transition: width 0.3s ease, transform 0.3s ease;
+    height: auto;
+}
+
+
+html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    color: #fff;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* -------------------------------
+   TYPOGRAPHY STYLES
+-------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+small {
+    font-size: 0.875rem;
+    color: var(--muted-color);
+}
+
+blockquote {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--primary-color);
+    background-color: #f9f9f9;
+    font-style: italic;
+}
+
+/* -------------------------------
+   MEDIA ELEMENTS
+-------------------------------- */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* -------------------------------
+   LINKS
+-------------------------------- */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    transition: color var(--transition);
+}
+
+a:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+
+
+
+/* -------------------------------
+   FORMS & BUTTONS
+-------------------------------- */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    color: #727272 !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+input,
+textarea,
+select {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* -------------------------------
+   LISTS
+-------------------------------- */
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li:focus {
+    outline: none;
+    border: none;
+}
+
+/* -------------------------------
+   SCROLLBAR
+-------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+
+@media (max-width: 991.98px) {
+    body {
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        /* IE & Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari */
+    }
+}
+
+@media (max-width: 991.98px) {
+    .layout {
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        /* IE & Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .layout::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari */
+    }
+}
+
+/* -------------------------------
+   UTILITY CLASSES
+-------------------------------- */
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.block {
+    display: block;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.rounded {
+    border-radius: var(--border-radius);
+}
+
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+
+.transition-all {
+    transition: all var(--transition);
+}
+
+/* -------------------------------
+   RESPONSIVE MEDIA QUERIES
+-------------------------------- */
+@media (max-width: 768px) {
+    .hide-md {
+        display: none !important;
+    }
+
+    .text-sm {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-xs {
+        font-size: 0.75rem;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+}

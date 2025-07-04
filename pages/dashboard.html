@@ -1,0 +1,420 @@
+<div class="dashboard-content-main">
+  <div class="main-content-inner-StartArea">
+    <div class="dashboard-boxFlex">
+      <div class="dashMainCard">
+        <div class="dashMainCard-IconArea">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="dashMainCard-IconMain"
+          >
+            <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+            <path d="m19 9-5 5-4-4-3 3" />
+          </svg>
+        </div>
+
+        <div class="dashMainCard-Textflex">
+          <span>38</span>
+          <span>TASK PROGRESS</span>
+        </div>
+      </div>
+      <div class="dashMainCard">
+        <div class="dashMainCard-IconArea">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="dashMainCard-IconMain"
+          >
+            <path d="M6 18h8" />
+            <path d="M3 22h18" />
+            <path d="M14 22a7 7 0 1 0 0-14h-1" />
+            <path d="M9 14h2" />
+            <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
+            <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
+          </svg>
+        </div>
+
+        <div class="dashMainCard-Textflex">
+          <span>59</span>
+          <span>TASK RESEARCH</span>
+        </div>
+      </div>
+      <div class="dashMainCard">
+        <div class="dashMainCard-IconArea">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="dashMainCard-IconMain"
+          >
+            <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+            <path d="m9 11 3 3L22 4" />
+          </svg>
+        </div>
+
+        <div class="dashMainCard-Textflex">
+          <span>87</span>
+          <span>TASK COMPLETED</span>
+        </div>
+      </div>
+      <div class="dashMainCard">
+        <div class="dashMainCard-IconArea">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="dashMainCard-IconMain"
+          >
+            <path d="m13.11 7.664 1.78 2.672" />
+            <path d="m14.162 12.788-3.324 1.424" />
+            <path d="m20 4-6.06 1.515" />
+            <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+            <circle cx="12" cy="6" r="2" />
+            <circle cx="16" cy="12" r="2" />
+            <circle cx="9" cy="15" r="2" />
+          </svg>
+        </div>
+
+        <div class="dashMainCard-Textflex">
+          <span>43</span>
+          <span>ONGOING PROJECT</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-boxFlex">
+      <div class="dashboard-MidChartArea-Start">
+        <div class="chart-card">
+          <div class="chart-card-Top">
+            <div class="chart-card-Top-Text">ANALYSIS</div>
+
+            <div class="CardGraph-ClickArea">
+              <i
+                class="fa-solid fa-ellipsis-vertical chart-card-Top-Icon toggle-menu-icon"
+              ></i>
+              <div class="dashGraph-HiddenPop">
+                <ul class="dashGraph-HiddenPop-List">
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Action</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Support</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <canvas class="hoverDoughnut" id="hoverDoughnut"></canvas>
+        </div>
+      </div>
+
+      <div class="dashboard-MidChartArea-End">
+        <div class="chart-card">
+          <div class="chart-card-Top">
+            <div class="chart-card-Top-Text">STATISTICS</div>
+            <div class="CardGraph-ClickArea">
+              <i
+                class="fa-solid fa-ellipsis-vertical chart-card-Top-Icon toggle-menu-icon"
+              ></i>
+              <div class="dashGraph-HiddenPop">
+                <ul class="dashGraph-HiddenPop-List">
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Action</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Support</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <canvas id="waveStackedChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-boxFlex">
+      <div class="dashboard-MidChartArea-End">
+        <div class="chart-card">
+          <div class="chart-card-Top">
+            <div class="chart-card-Top-Text">LINE SCATTER DIAGRAM</div>
+            <div class="CardGraph-ClickArea">
+              <i
+                class="fa-solid fa-ellipsis-vertical chart-card-Top-Icon toggle-menu-icon"
+              ></i>
+              <div class="dashGraph-HiddenPop">
+                <ul class="dashGraph-HiddenPop-List">
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Action</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Support</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <canvas id="scatterChart"></canvas>
+        </div>
+      </div>
+
+      <div class="dashboard-MidChartArea-Start">
+        <div class="chart-card">
+          <div class="chart-card-Top">
+            <div class="chart-card-Top-Text">UX & UI ANALYSIS</div>
+            <div class="CardGraph-ClickArea">
+              <i
+                class="fa-solid fa-ellipsis-vertical chart-card-Top-Icon toggle-menu-icon"
+              ></i>
+              <div class="dashGraph-HiddenPop">
+                <ul class="dashGraph-HiddenPop-List">
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Action</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">Support</a>
+                  </li>
+                  <li class="dashGraph-HiddenPop-Item">
+                    <a href="#" class="dashGraph-HiddenPop-Links">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content-inner-EndArea">
+    <div class="chatOnline-LargeBox">
+      <div class="chatOnline-LargeBox-TopHeader">
+        <div class="chatOnline-LargeBox-FIlter-Buttons">
+          <button
+            class="filter-btn chatOnline-LargeBox-Active"
+            chatOnline-LargeBox-Data-Filter="online"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="chatOnline-LargeBox-Icon"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <circle cx="9" cy="7" r="4" />
+            </svg>
+          </button>
+          <button class="filter-btn" chatOnline-LargeBox-Data-Filter="message">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="chatOnline-LargeBox-Icon"
+            >
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="chatOnline-LargeBox-Items">
+        <div class="chatOnline-LargeBox-ItemInner online">
+          <div class="chatOnline-LargeBox-ItemInnerHeading">Online</div>
+
+          <div class="chatOnline-LargeBox-UserCard-Area">
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online1.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Robart Alex</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >Writer, Editor</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online2.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Anthony Gomes</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >Designer</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online3.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Robarto Thuan</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >UX Designer</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online4.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Mogen Polshin</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >UI Designer</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online5.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Mogen Pallak</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >Writer, Editor</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online6.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Shawon Rox</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >Writer, Editor</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online7.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Alex Morgan</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >Writer, Editor</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online8.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Edward Ziggler</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >Ui Designer</span
+                >
+              </div>
+            </div>
+
+            <div class="chatOnline-LargeBox-UserCard">
+              <div class="chatOnline-LargeBox-UserCard-ImgPart">
+                <img src="/assets/images/online9.png" />
+                <div class="chatOnline-LargeBox-OnlineGreen"></div>
+              </div>
+              <div class="chatOnline-LargeBox-UserCard-TxtPart">
+                <a href="#" class="chatOnline-LargeBox-UserCard-Txt"
+                  >Anthony Gomes</a
+                >
+                <span class="chatOnline-LargeBox-UserCard-Txt-span"
+                  >Designer</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ************************************** -->
+        <div class="chatOnline-LargeBox-ItemInner message">
+          <div class="chatOnline-LargeBox-ItemInner-Nomsg">No Message</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

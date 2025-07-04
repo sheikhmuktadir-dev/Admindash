@@ -1,0 +1,350 @@
+.topHeader-Main {
+    position: fixed;
+    top: 0;
+    background: -webkit-linear-gradient(90deg, var(--navbar-bg1), var(--navbar-bg2));
+    background: -o-linear-gradient(90deg, var(--navbar-bg1), var(--navbar-bg2));
+    background: -moz-linear-gradient(90deg, var(--navbar-bg1), var(--navbar-bg2));
+    background: linear-gradient(90deg, var(--navbar-bg1), var(--navbar-bg2));
+    z-index: 9999;
+    width: calc(100% - 180px);
+    padding: 0;
+    margin: 0;
+    left: 180px;
+    height: 100px;
+    transition: left 0.3s ease, width 0.3s ease;
+
+}
+
+
+.sidebar-expanded .topHeader-Main {
+    left: 280px;
+    width: calc(100% - 280px);
+}
+
+.topHeader-Inner-LeftArea-Msg {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+
+.topHeader-Inner-LeftArea-MsgText {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    color: #c5c5c5;
+    letter-spacing: 0.5px;
+}
+
+
+.topHeader-Inner-Content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+}
+
+
+
+.nav-toggle-btn {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    flex: none;
+    color: #c5c5c5;
+    stroke: currentColor;
+    transition: stroke 0.3s ease;
+}
+
+
+.topHeader-Inner-LeftArea {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 85px;
+}
+
+.topHeader-SearchArea {
+    position: relative;
+}
+
+.topHeader-SearchBox {
+    position: relative;
+    border-radius: 300px;
+    flex: none;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    color: #898989 !important;
+    padding: 10px 30px;
+    height: 50px;
+    width: 350px;
+    border: 1.5px solid #2f3136;
+    background-color: transparent;
+}
+
+.topHeader-SearchBox:focus {
+    outline: none;
+    border: 1px solid #2f3136;
+    box-shadow: none;
+}
+
+
+
+.topHeader-SearchIcon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    color: #2f3136;
+    font-size: 22px;
+    transform: translateY(-50%);
+}
+
+.topHeader-Inner-RightArea {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.topHeader-Top-ClickButton {
+    width: 45px;
+    height: 45px;
+    flex: none;
+    background-color: #6256a9;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.navBar-Mainicon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+.topHeader-Top-ClickButton:hover {
+    transform: translate(5px, -5px);
+    transition: all 0.2s ease;
+
+}
+
+
+.topHeader-Top-ClickButton:focus {
+    outline: none;
+}
+
+.topHeader-Top-Click-Badge {
+    position: absolute;
+    top: -5px;
+    min-width: 18px;
+    flex: none;
+    z-index: 80;
+    min-height: 18px;
+    border-radius: 300px;
+    background-color: #04aec6;
+    display: inline-flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    right: -4px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    z-index: 100000;
+}
+
+.topHeader-Top-Click-Badge:focus {
+    outline: none;
+}
+
+.topHeader-Profile {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.topHeader-Profile-Image {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 300px;
+}
+
+
+
+.topHeader-Profile-Details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.topHeader-Profile-Details span:first-child {
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    color: #c5c5c5;
+    letter-spacing: 1.5px;
+}
+
+.topHeader-Profile-Details span:last-child {
+    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+    color: #898989;
+    letter-spacing: 0.5px;
+}
+
+.topHeaerProfile-ArrowIcon {
+    font-size: 0.8rem;
+    padding: 8px 0 0;
+    position: relative;
+    color: #c5c5c5;
+}
+
+.topHeader-Themeicon {
+    stroke: #fff;
+}
+
+@media (max-width:576.98px) {
+
+    .topHeader-Main {
+        width: calc(100% - 0px);
+        position: relative;
+        left: 0;
+        height: auto;
+    }
+
+    .topHeader-Inner-Content {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+
+    .topHeader-SearchBox {
+        width: 100%;
+    }
+
+    .topHeader-Inner-RightArea {
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+
+    .topHeader-SearchArea {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .topHeader-Inner-LeftArea {
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+}
+
+
+@media (min-width:576px) and (max-width:991.98px) {
+
+
+    .topHeader-SearchBox {
+        width: 100%;
+    }
+
+    .topHeader-SearchArea {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .topHeader-Inner-LeftArea {
+        gap: 20px;
+    }
+
+    .topHeader-Inner-LeftArea-Msg {
+        gap: 15px;
+    }
+
+    .topHeader-Inner-RightArea {
+        gap: 25px;
+    }
+
+    .topHeader-Inner-Content {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+
+}
+
+
+@media (min-width:992px) and (max-width:1199.98px) {
+
+    .topHeader-SearchBox {
+        width: 100%;
+    }
+
+    .topHeader-SearchArea {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .topHeader-Inner-LeftArea {
+        gap: 40px;
+    }
+
+}
+
+@media (max-width:991.98px) {
+    .topHeader-Main {
+        left: 0;
+        width: calc(100% - 0px);
+    }
+
+    .sidebar-expanded .topHeader-Main {
+        left: 0;
+        width: calc(100% - 0px);
+    }
+
+    .nav-toggle-btn {
+        font-size: 26px;
+    }
+
+    .topHeader-SearchIcon {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .topHeader-Profile-Details {
+        display: none;
+    }
+
+    .topHeader-Profile {
+        align-items: center;
+    }
+}

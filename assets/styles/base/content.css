@@ -1,0 +1,46 @@
+.main-content {
+    position: relative;
+    margin-top: 100px;
+    padding: 1rem;
+    width: calc(100% - 180px);
+    margin-left: 180px;
+    overflow-y: auto;
+    z-index: 9;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+
+}
+
+.sidebar-expanded .main-content {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+}
+
+
+@media (min-width:576px) and (max-width:991.98px) {
+    .sidebar-expanded .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        margin-top: 100px;
+    }
+
+}
+
+@media (max-width:575.98px) {
+    .sidebar-expanded .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        margin-top: 0;
+    }
+}

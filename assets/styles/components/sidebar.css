@@ -1,0 +1,427 @@
+.sideBar-Main {
+    position: fixed;
+    width: 180px;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;
+    height: 100vh;
+    background: -webkit-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    background: -o-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    background: -moz-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    background: linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-expanded .sideBar-Main {
+    width: 280px;
+    transition: width 0.3s ease, transform 0.3s ease;
+
+}
+
+.sideBarClose-Mobile {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 22px;
+    z-index: 99999999;
+    cursor: pointer;
+    color: #898989;
+}
+
+
+
+
+.sideBar-Inner-Content {
+    position: relative;
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+    transition: all 0.3s ease;
+
+}
+
+.sideBar-TopArea {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.sideBar-Brand {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sideBar-Brand:focus {
+    outline: none;
+    border: none;
+}
+
+.sideBar-Brand-Image {
+    position: relative;
+    width: 100px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+
+}
+
+.sideBar-UserProfile-ImgPart-Outer {
+    position: relative;
+}
+
+.sideBar-UserProfile-Active {
+    width: 10px;
+    height: 10px;
+    border-radius: 300px;
+    position: absolute;
+    background-color: #04aec6;
+    right: 10px;
+    bottom: 4px;
+    z-index: 50;
+    animation: userActive 1s linear infinite;
+}
+
+
+@keyframes userActive {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    20% {
+        transform: scale(1.2, 1.2);
+    }
+
+    40% {
+        transform: scale(1.1, 1.1);
+    }
+
+    60% {
+        transform: scale(1.2, 1.2);
+    }
+
+    80% {
+        transform: scale(1.1, 1.1);
+    }
+
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+.sideBar-UserProfile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease;
+
+}
+
+
+.sideBar-UserProfile-ImgPart {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+
+.sideBar-UserProfile-Image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 300px;
+    transition: all 0.3s ease;
+
+}
+
+.sideBar-UserProfile-TextPart {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+.sideBar-UserProfile-Name {
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #898989;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.sideBar-UserProfile-Designation {
+    position: relative;
+    font-size: 12px;
+    color: #898989;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    font-family: "Oswald", sans-serif;
+}
+
+.sideBar-ListArea {
+    position: relative;
+    z-index: 200;
+    max-height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+.sideBar-List {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.sideBar-Item {
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.sideBar-Link {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 22px 20px;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.5px;
+    gap: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #898989;
+    transition: padding 0.3s ease, gap 0.3s ease, flex-direction 0.3s ease, text-align 0.3s ease;
+    justify-content: center;
+}
+
+.sideBar-Link:hover .sideBar-LinkIcon {
+    transform: translate(5px, -5px);
+}
+
+
+.sideBar-Link:focus {
+    outline: none;
+    border: none;
+}
+
+.sideBar-LinkFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.sideBar-Link.active {
+    background-color: #6256a9;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.sideBar-Link.active .sideBar-LinkIcon {
+    color: #fff;
+}
+
+.sideBar-LinkIcon {
+    position: relative;
+    color: #898989;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-expanded .sideBar-Link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    padding: 30px 30px;
+    gap: 15px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.sidebar-expanded .sideBar-LinkFlex {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+html.preload .sideBar-Main {
+    transform: translateX(-110%) !important;
+    transition: none !important;
+    visibility: hidden;
+}
+
+.sidebar-expanded .sideBar-Main {
+    visibility: visible;
+}
+
+
+
+.sideBar-ArrowIcon {
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.sideBar-Arrow-Rotate {
+    transform: rotate(180deg);
+}
+
+.sideBar-Submenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    padding: 1rem;
+}
+
+.sidebar-expanded .sideBar-Submenu {
+    align-items: start;
+    text-align: start;
+    padding-left: 5rem;
+}
+
+.sidebar-expanded .sideBar-Submenu-Link {
+    text-align: start;
+    justify-content: start;
+}
+
+
+.sidebar-expanded .sideBar-Submenu-Link {
+    font-size: 18px;
+}
+
+.sideBar-Item.submenu-open>.sideBar-Submenu {
+    display: block;
+}
+
+.sideBar-Submenu-Link {
+    color: #898989;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    transition: color 0.2s;
+}
+
+/* .sideBar-Submenu-Active {
+    color: #fff;
+    border-left: 2px solid #04aec6;
+}
+ */
+
+.active-submenu {
+    color: #fff;
+}
+
+
+@media (max-width:575.98px) {
+    .sideBar-Main {
+        width: 60%;
+    }
+
+    .sidebar-expanded .sideBar-Main {
+        width: 60%;
+    }
+}
+
+@media (min-width:576px) and (max-width:991.98px) {
+    .sideBar-Main {
+        width: 40%;
+    }
+
+    .sidebar-expanded .sideBar-Main {
+        width: 40%;
+    }
+}
+
+@media (max-width:991.98px) {
+    .sideBar-Main {
+        transform: translateX(-110%);
+        transition: all 0.3s ease;
+        z-index: 99999;
+    }
+
+    .sidebar-expanded .sideBar-Main {
+        transform: translateX(0%);
+        transition: all 0.3s ease;
+        z-index: 99999;
+    }
+
+    .sideBarClose-Mobile {
+        display: block;
+    }
+
+
+
+    .sideBar-LinkIcon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .sidebar-expanded .sideBar-Link {
+        padding: 15px 15px;
+    }
+
+    .sidebar-expanded .sideBar-Link {
+        font-size: 16px;
+    }
+
+    .sidebar-expanded .sideBar-LinkFlex {
+        gap: 10px;
+    }
+
+    .sidebar-expanded .sideBar-Submenu-Link {
+        font-size: 16px;
+    }
+
+}

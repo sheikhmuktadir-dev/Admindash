@@ -1,0 +1,558 @@
+.dashboard-content-main {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: start;
+    transition: all 0.3s ease;
+
+}
+
+
+.main-content-inner-StartArea {
+    position: relative;
+    flex: 3;
+    transition: all 0.3s ease;
+
+}
+
+.main-content-inner-EndArea {
+    position: relative;
+    flex: 1;
+    transition: all 0.3s ease;
+
+}
+
+
+.dashboard-boxFlex {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* ******************************************************************* */
+
+
+.chatOnline-LargeBox {
+    position: relative;
+    background: -webkit-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    background: -o-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    background: -moz-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    background: linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg2));
+    padding: 0 0 30px;
+    border-radius: 7px;
+    min-height: auto;
+    max-height: auto;
+    z-index: 100;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.chatOnline-LargeBox-TopHeader {
+    position: relative;
+    padding: 20px 5px 0;
+}
+
+.chatOnline-LargeBox-FIlter-Buttons {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.chatOnline-LargeBox-FIlter-Buttons .filter-btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+}
+
+
+.chatOnline-LargeBox-FIlter-Buttons .filter-btn:focus {
+    outline: none;
+}
+
+
+.chatOnline-LargeBox-Icon {
+    position: relative;
+    width: 30px;
+    color: #c5c5c5;
+    stroke: currentColor;
+    height: 30px;
+}
+
+
+.filter-btn.chatOnline-LargeBox-Active .chatOnline-LargeBox-Icon {
+    color: #6256a9;
+}
+
+
+.filter-btn.chatOnline-LargeBox-Active {
+    background-color: transparent;
+    color: #6256a9;
+    border-bottom: 2px solid #6256a9;
+}
+
+.chatOnline-LargeBox-Items {
+    position: relative;
+    max-height: 600px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.chatOnline-LargeBox-ItemInner {
+    display: none;
+}
+
+
+
+.chatOnline-LargeBox-ItemInnerHeading {
+    position: relative;
+    font-size: 16px;
+    color: #c5c5c5;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-family: "Oswald", sans-serif;
+}
+
+.chatOnline-LargeBox-ItemInner-Nomsg {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    font-size: 16px;
+    color: #c5c5c5;
+
+}
+
+.chatOnline-LargeBox-UserCard-Area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 30px;
+}
+
+.chatOnline-LargeBox-UserCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.chatOnline-LargeBox-UserCard-ImgPart {
+    position: relative;
+}
+
+
+.chatOnline-LargeBox-UserCard-ImgPart img {
+    width: 50px;
+    height: 50px;
+    border-radius: 300px;
+    position: relative;
+    object-fit: cover;
+}
+
+.chatOnline-LargeBox-UserCard-TxtPart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.chatOnline-LargeBox-UserCard-Txt {
+    font-size: 14px;
+    color: #bdbdbd;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+}
+
+.chatOnline-LargeBox-UserCard-Txt-span {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    color: #bdbdbd;
+}
+
+.chatOnline-LargeBox-OnlineGreen {
+    width: 12px;
+    height: 12px;
+    border-radius: 300px;
+    background-color: #89e07d;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    border: 2px solid #202226;
+    z-index: 20;
+}
+
+
+/* ************************************************ */
+
+
+
+.dashMainCard {
+    position: relative;
+    top: 0;
+    width: calc((100% - 3rem) / 4);
+    background-color: var(--sidebar-bg1);
+    border-radius: 7px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashMainCard-IconArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dashMainCard-IconMain {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: #c5c5c5;
+}
+
+.dashMainCard-Textflex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+    padding: 5px 0;
+    background-color: #242629;
+    border-radius: 0 0 7px 7px;
+}
+
+.dashMainCard-Textflex span:first-child {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.dashMainCard-Textflex span:last-child {
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+
+
+/* ****************************************************************** */
+
+
+.chart-card {
+    flex: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: -webkit-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg1) 48%, var(--sidebar-bg2));
+    background: -o-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg1) 48%, var(--sidebar-bg2));
+    background: -moz-linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg1) 48%, var(--sidebar-bg2));
+    background: linear-gradient(180deg, var(--sidebar-bg1), var(--sidebar-bg1) 48%, var(--sidebar-bg2));
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 40px;
+}
+
+
+.chart-card-Top {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart-card canvas.hoverDoughnut {
+    width: 220px !important;
+    height: 220px !important;
+    transition: width 0.3s ease;
+}
+
+.sidebar-expanded .chart-card canvas.hoverDoughnut {
+    width: 200px;
+    height: 200px;
+    transition: width 0.3s ease;
+
+}
+
+
+.dashboard-MidChartArea-Start {
+    position: relative;
+    flex: 1.5;
+}
+
+
+.dashboard-MidChartArea-End {
+    position: relative;
+    flex: 2.5;
+}
+
+.chart-card-Top-Text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #898989;
+}
+
+.chart-card-Top-Icon {
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    color: #898989;
+}
+
+
+.chart-card-Top-Icon:focus {
+    outline: none;
+    border: none;
+}
+
+.CardGraph-ClickArea {
+    position: relative;
+}
+
+
+.dashGraph-HiddenPop {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 30px;
+    list-style: none;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    border: 1px solid #e7e9e8;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+
+.dashGraph-HiddenPop.dashGraph-active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    display: block;
+}
+
+.dashGraph-HiddenPop-List {
+    margin: 0;
+    padding: 0;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 250px;
+}
+
+
+.dashGraph-HiddenPop-Item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #e7e9e8;
+}
+
+.dashGraph-HiddenPop-Item:last-child {
+    border: none;
+}
+
+.dashGraph-HiddenPop-Links {
+    text-decoration: none;
+    color: #323232;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width:575.98px) {
+    .dashboard-content-main {
+        flex-wrap: wrap;
+    }
+
+    .main-content-inner-StartArea {
+        flex: 0 0 100%;
+    }
+
+    .main-content-inner-EndArea {
+        flex: 0 0 100%;
+    }
+
+    .dashboard-boxFlex {
+        flex-wrap: wrap;
+    }
+
+    .dashMainCard {
+        width: calc((100% - 0rem) / 1);
+    }
+
+    .dashboard-MidChartArea-Start {
+        flex: 0 0 100%;
+    }
+
+    .dashboard-MidChartArea-End {
+        flex: 0 0 100%;
+    }
+
+    .dashMainCard-Textflex {
+        flex-direction: column;
+        padding: 10px 0 20px;
+
+    }
+
+    .dashMainCard-Textflex span:first-child {
+        font-size: 40px;
+    }
+
+    .chatOnline-LargeBox-Items {
+        max-height: 350px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .dashboard-content-main {
+        flex-wrap: wrap;
+    }
+
+    .main-content-inner-StartArea {
+        flex: 0 0 100%;
+    }
+
+    .main-content-inner-EndArea {
+        flex: 0 0 100%;
+    }
+
+    .dashboard-boxFlex {
+        flex-wrap: wrap;
+    }
+
+    .dashMainCard {
+        width: calc((100% - 1rem) / 2);
+    }
+
+    .dashboard-MidChartArea-Start {
+        flex: 0 0 100%;
+    }
+
+    .dashboard-MidChartArea-End {
+        flex: 0 0 100%;
+    }
+
+    .dashMainCard-Textflex {
+        flex-direction: column;
+        padding: 10px 0 20px;
+
+    }
+
+    .dashMainCard-Textflex span:first-child {
+        font-size: 45px;
+    }
+
+    .chatOnline-LargeBox-Items {
+        max-height: 400px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1199.98px) {
+
+
+    .main-content-inner-StartArea {
+        flex: 2;
+    }
+
+    .main-content-inner-EndArea {
+        flex: 1;
+    }
+
+    .dashboard-boxFlex {
+        flex-wrap: wrap;
+    }
+
+    .dashMainCard {
+        width: calc((100% - 1rem) / 2);
+    }
+
+
+
+    .dashMainCard-Textflex {
+        flex-direction: column;
+        padding: 10px 0 20px;
+
+    }
+
+    .dashboard-MidChartArea-Start {
+        flex: 0 0 100%;
+    }
+
+    .dashboard-MidChartArea-End {
+        flex: 0 0 100%;
+    }
+
+    .dashMainCard-Textflex span:first-child {
+        font-size: 45px;
+    }
+
+    .chatOnline-LargeBox-Items {
+        max-height: 400px;
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1399.98px) {
+    .dashMainCard-Textflex span:first-child {
+        font-size: 40px;
+    }
+}
+
+@media (min-width:2000px) {
+    .dashboard-content-main {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1399.9px) {
+    .chart-card canvas.hoverDoughnut {
+        width: 100%;
+        height: 100%;
+        transition: width 0.3s ease;
+    }
+
+    .sidebar-expanded .chart-card canvas.hoverDoughnut {
+        width: 100%;
+        height: 100%;
+        transition: width 0.3s ease;
+
+    }
+
+}
