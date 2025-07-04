@@ -1,8 +1,11 @@
 import { defineConfig } from "vite";
 import history from "connect-history-api-fallback";
 
+// Determine base dynamically
+const isProd = process.env.NODE_ENV === "production";
+
 export default defineConfig({
-  base: "/Admindash/", // ✅ this must match your repo name exactly
+  base: isProd ? "/Admindash/" : "/", // 👈 Use correct base depending on env
   plugins: [
     {
       name: "spa-fallback",
