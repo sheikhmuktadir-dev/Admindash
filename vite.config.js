@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import history from "connect-history-api-fallback";
 
 export default defineConfig({
-  base: "/your-repo-name/", // 🔁 Replace with your GitHub repo name
+  base: "/Admindash/", // 🔁 Replace with your GitHub repo name
   plugins: [
     {
       name: "spa-fallback",
